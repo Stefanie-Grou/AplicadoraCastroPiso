@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicadora Castro Piso - Portfólio</title>
+    <style>
+        /* === Estilos Globais === */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: #f8f1e6;
+        }
+
+        /* === Header Hero === */
+        .hero {
+            position: relative;
+            height: 600px;
+            background: #2c1810;
+            color: #ebebeb;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* === Seção Serviços === */
+        .servicos {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .servicos h2 {
+            text-align: center;
+            color: #6B4F3B;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+			margin-top: 20px;
+			color: #242424;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        /* === Seção Antes/Depois === */
+        .comparacao {
+            background: #e3d5c6;
+            padding: 4rem 2rem;
+        }
+
+        .comparacao-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+		.comparacao-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		
+		.comparacao-grid img {
+			width: 14rem;
+            height: 15rem;
+			border-radius: 50%;
+		}
+		
+		.comparacao-holder {
+			background: #ebebeb;
+			padding: 3rem 2rem;
+			border-radius: 2rem;
+		}
+		
+		.comparacao-holder h2 {
+			font-style: oblique;
+			color: #242424;
+			text-align: right;
+			padding-top: 3rem;
+		}
+		
+		/* === Galeria === */
+		.galeria{
+			padding: 2rem;
+		}		
+		
+		.galeria h2{
+		  margin-top: 2rem;
+		  text-align: center;
+          margin-bottom: 3rem;
+          font-size: 2.5rem;
+		  color: #2c1810;
+		}
+		
+		.holder-shadowing{
+		    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+			display: flex;
+		}
+		
+		.text-holder {
+			padding: 6rem 2 rem;
+			padding-left: 2rem;
+		}
+		
+        .card-galeria {
+            background: #ebebeb;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card-galeria img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+		
+
+        /* === Footer === */
+        footer {
+            background: #6B4F3B;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transformamos Seu Piso de Madeira</h1>
+            <p>Restauração profissional e tratamentos preventivos</p>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="servicos">
+        <h2>Nossos Serviços</h2>
+		<div class="card-grid">
+		    <div class="card">
+                <img src="Instalação.png">
+                <div class="card-content">
+                    <h3>Instalações</h3>
+                    <p>Instalação de peças de madeira de diversos tipos para atender as suas necessidades</p>
+                </div>
+            </div>
+			<div class="card">
+                <img src="Trocas de peças.png">
+                <div class="card-content">
+                    <h3>Trocas de peças</h3>
+                    <p>Troca de peças específicas para deixar seu piso com acabamento perfeito</p>
+                </div>
+            </div>
+		</div>
+        <div class="card-grid">
+            <div class="card">
+                <img src="Restauração de piso.png" alt="Lixamento profissional">
+                <div class="card-content">
+                    <h3>Lixamento Profissional</h3>
+                    <p>Utilizamos uma sequência de diferentes técnicas e tipos de lixas para a remoção de imperfeições e preparação para acabamento</p>
+                </div>
+            </div>
+			<div class="card">
+                <img src="Limpeza pesada.png" alt="Lixamento profissional">
+                <div class="card-content">
+                    <h3>Limpeza profunda</h3>
+                    <p>Temos todo o cuidado necessário para um acabamento de alta qualidade para o seu piso de madeira</p>
+                </div>
+            </div>
+        </div>
+		<div class="card-grid">
+			<div class="card">
+                <img src="Calafetação.png">
+                <div class="card-content">
+                    <h3>Calafetação</h3>
+                    <p>Selagem das peças de madeira, para melhor durabilidade e acabamento do seu piso</p>
+                </div>
+            </div>
+			<div class="card">
+                <img src="Envernizamento.png">
+                <div class="card-content">
+                    <h3>Envernizamento</h3>
+                    <p>Usamos os vernizes de melhor qualidade para a sua necessidade, desde residenciais até de alto tráfego</p>
+                </div>
+            </div>
+		</div>
+				<div class="card-grid">
+			<div class="card">
+                <img src="Especiais.png">
+                <div class="card-content">
+                    <h3>Serviços especiais</h3>
+                    <p>Desde decks até pergolados, realizamos todos os serviços necessários para dar um toque especial ao seu lar</p>
+                </div>
+            </div>
+			<div class="card">
+                <img src="Rodapés.png">
+                <div class="card-content">
+                    <h3>Cuidados com rodapés</h3>
+                    <p>Raspagem, calafetação e envernizamento: tudo para a moldura do seu piso</p>
+                </div>
+            </div>
+		</div>
+    </section>
+
+    <!-- COMPARAÇÃO ANTES/DEPOIS -->
+    <section class="comparacao">
+        <div class="comparacao-grid">
+            <div class = "comparacao-holder holder-shadowing">
+                <img src="Início.jpg">
+				<div class = "text-holder">
+					<h2>Início de um sonho</h2>
+				</div>
+            </div>
+            
+            <div class = "comparacao-holder holder-shadowing">
+                <img src="7.jpg">
+				<div class = "text-holder">
+					<h2>Deu tudo certo!</h2>
+				</div>
+            </div>
+    </section>
+	
+	<!-- GALERIA -->
+	<section class="galeria">
+		<div>
+			<h2>Galeria de Imagens</h2>
+		</div>
+		<div class="card-grid">
+			<div class="card-galeria">
+                <img src="1.jpg">
+            </div>
+			<div class="card-galeria">
+                <img src="2.jpg">
+            </div>
+			<div class="card-galeria">
+                <img src="3.jpg">
+            </div>
+			<div class="card-galeria">
+                <img src="4.jpg">
+            </div>
+			<div class="card-galeria">
+                <img src="5.jpg">
+            </div>
+			<div class="card-galeria">
+                <img src="6.jpg">
+            </div>			
+			<div class="card-galeria">
+                <img src="7.jpg">
+            </div>			
+			<div class="card-galeria">
+                <img src="8.jpg">
+            </div>
+		</div>
+	</section>
+
+    <footer>
+        <p>© 2006-2025 Aplicadora Castro Piso. Todos os direitos reservados</p>
+		<p>Eduardo Castro</p>
+		<p>(11) 99455-9970</p>
+    </footer>
+</body>
+</html>
